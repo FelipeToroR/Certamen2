@@ -1,0 +1,166 @@
+#portada{
+    margin: 3%;
+    
+        #rowperfil{
+        justify-content: left;
+        width: auto;
+        padding-bottom: 5%;
+
+            div#datos{
+                width: auto;
+                position: relative;
+            
+            }
+        }
+
+        h1{
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif; 
+            padding-bottom: 2%;
+        }
+
+        div#rowsignos{
+            width: 25%;
+            padding:20px;
+            border: solid 1px;
+            float: left;
+
+            div#columnaflechas{
+                width: 2%;
+                padding-right: 30px;
+
+                li{
+                    position: relative;
+                    top: -2px;
+                    padding-bottom: 7px;
+                }
+               
+            }
+
+            div#columnasignos{
+                width: 5%;
+                 padding-right: 100px;
+             }
+     
+             div#columnadatos{
+              width: 30%;
+                 
+             }
+        }
+
+
+        div#rowantecedentes{
+            position: relative;
+            left: 100px;
+            width: 25%;
+            padding:20px;
+            float: left;
+
+            div#columnaantecedentes{
+                width: 90%;  
+                margin-top: -30%;
+
+                h2{
+                    width: 100%;
+                    font-size: 15px;
+                    font-weight: 800;
+                    font-family: 'Roboto', sans-serif; 
+                    padding-bottom: 5%;
+                    border-bottom: solid 1px;
+                }
+                span.material-icons{
+                  font-size: 32px;
+                  display:inline-block;
+                    
+                    
+                }
+
+                #antecedentes li{
+                    padding-top: 2%;
+                    padding-bottom: 2%;
+                    border-bottom: solid 1px;   
+                }
+                li:before{
+                    content: '\e92b';
+                    position: absolute;
+                    right:10px;
+                    font-family: "Material Icons";
+                    font-size:32px;
+                    
+                }
+
+                button#botonagregar{
+                    visibility: hidden;
+                }
+
+                span {
+                    visibility: visible;
+                    font-weight: 600;
+                    font-size: 16px;
+                    display:inline-block;
+                    position: relative;
+                    top: -30px;
+                    right: -245px;
+                    
+                }
+            }
+        }
+       
+    
+
+    #datos{
+        
+        h1{
+            font-size: 50px;
+            font-family: 'Roboto', sans-serif; 
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        h5{
+            padding-bottom: 10%;
+        }
+    }
+        
+        #perfil{
+            width: 20%;
+            height: auto;
+            border: 1px solid;
+            margin-right: 5px;
+        }
+    
+}
+
+#forma{
+    h4{
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: 600;
+    }
+
+    display: none;
+    width: 70%;
+    padding-left: 35%;
+}
+
+#fieldagregar{
+    position: relative;
+    right: -70%;
+    bottom: -90%;
+   
+    display: none;
+
+    div#cajacreacion{
+        width: 500px;
+        height: 150px;
+        border: solid 1px;
+    }
+}
+
+ul{
+    list-style-type: none;
+
+    
+}
+

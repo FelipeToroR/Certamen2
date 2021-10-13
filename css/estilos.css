@@ -1,0 +1,153 @@
+#portada {
+  margin: 3%;
+}
+
+#portada #rowperfil {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: auto;
+  padding-bottom: 5%;
+}
+
+#portada #rowperfil div#datos {
+  width: auto;
+  position: relative;
+}
+
+#portada h1 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 2%;
+}
+
+#portada div#rowsignos {
+  width: 25%;
+  padding: 20px;
+  border: solid 1px;
+  float: left;
+}
+
+#portada div#rowsignos div#columnaflechas {
+  width: 2%;
+  padding-right: 30px;
+}
+
+#portada div#rowsignos div#columnaflechas li {
+  position: relative;
+  top: -2px;
+  padding-bottom: 7px;
+}
+
+#portada div#rowsignos div#columnasignos {
+  width: 5%;
+  padding-right: 100px;
+}
+
+#portada div#rowsignos div#columnadatos {
+  width: 30%;
+}
+
+#portada div#rowantecedentes {
+  position: relative;
+  left: 100px;
+  width: 25%;
+  padding: 20px;
+  float: left;
+}
+
+#portada div#rowantecedentes div#columnaantecedentes {
+  width: 90%;
+  margin-top: -30%;
+}
+
+#portada div#rowantecedentes div#columnaantecedentes h2 {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 5%;
+  border-bottom: solid 1px;
+}
+
+#portada div#rowantecedentes div#columnaantecedentes span.material-icons {
+  font-size: 32px;
+  display: inline-block;
+}
+
+#portada div#rowantecedentes div#columnaantecedentes #antecedentes li {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: solid 1px;
+}
+
+#portada div#rowantecedentes div#columnaantecedentes li:before {
+  content: '\e92b';
+  position: absolute;
+  right: 10px;
+  font-family: "Material Icons";
+  font-size: 32px;
+}
+
+#portada div#rowantecedentes div#columnaantecedentes button#botonagregar {
+  visibility: hidden;
+}
+
+#portada div#rowantecedentes div#columnaantecedentes span {
+  visibility: visible;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  top: -30px;
+  right: -245px;
+}
+
+#portada #datos h1 {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#portada #datos h5 {
+  padding-bottom: 10%;
+}
+
+#portada #perfil {
+  width: 20%;
+  height: auto;
+  border: 1px solid;
+  margin-right: 5px;
+}
+
+#forma {
+  display: none;
+  width: 70%;
+  padding-left: 35%;
+}
+
+#forma h4 {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+#fieldagregar {
+  position: relative;
+  right: -70%;
+  bottom: -90%;
+  display: none;
+}
+
+#fieldagregar div#cajacreacion {
+  width: 500px;
+  height: 150px;
+  border: solid 1px;
+}
+
+ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=estilos.css.map */

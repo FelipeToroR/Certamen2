@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Certamen 2: Caso de analisis</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Iconos de google-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <!--  link a css-->
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/estilos.css" rel="stylesheet">
+      </head>
+    <body>
+
+        <div class="container-fluid">
+        
+            <form name="formulario" id="formulario" class="row g-3 needs-validation" novalidate>
+              <fieldset id="portada"> <!--------PORTADA ------>  
+                  <div class="row" id="rowperfil">
+                      <img id="perfil" src="imagenes/profile.png">
+                      <div id="datos">
+                      <h1>Juanito Pérez</h1>
+                      <h5>Octubre 21, 1999, 21 años</h5>
+                      <button class="btn btn-primary" type="button" id='editar'>Editar</button>
+                    </div>
+                  </div>
+                  <h1>Últimos signos vitales</h1>
+                  <div class="row" id="rowsignos">
+                    
+                    <div class="column" id="columnaflechas">
+                      <ul>
+                        <li> <span class="material-icons"> arrow_back_ios</span></li>
+                        <li><span class="material-icons"> arrow_back_ios</span></li>
+                        <li><span class="material-icons"> arrow_back_ios</span></li>
+                      </ul>
+                    </div>
+                    <div class="column" id="columnasignos">
+                      <ul id="signosvitales">
+                        <li><p class="alignleft">Estatura</p><br> </li>
+                        <li><p class="alignleft">Peso</p><br></li>
+                        <li><p class="alignleft">Frecuencia Cardiaca</p></li>
+                      </ul>
+                    </div>
+                    <div class="column" id="columnadatos">
+                      <ul>
+                        <li><p class="alignright">1.77</p><br></li>
+                        <li><p class="alignright">70 kg</p><br></li>
+                        <li><p class="alignright">70</p></li>
+                    </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="row" id="rowantecedentes">
+                    
+                    <div class="column" id="columnaantecedentes">
+                      <div>
+                      <h2>Antecedentes Clínicos </h2>
+                      <button type="button" id='botonagregar'>
+                        <span class="material-icons">control_point</span>
+                      </button>
+                    </div>
+                    <div>
+                      <ul id="antecedentes">
+                        
+                        <li><p>20-10-2020 <br><br> Hospitalizado por Bronquitis</p><br> </li>
+                        <span>Eliminar</span>
+                        <li><p>20-01-2009 <br><br> Hospitalizado por Intoxicación</p><br> </li>
+                        <span>Eliminar</span>
+                        <li><p>20-01-2009 <br><br> Hospitalizado por XXXXX</p><br> </li>
+                        <span>Eliminar</span>
+                      </ul>
+                    </div>
+                    </div>
+              </fieldset> 
+              <fieldset id="fieldagregar">
+                <h1>Datos Antecedentes Clinicos</h1>
+                <div id=cajacreacion>
+
+                </div>
+              </fieldset>
+              <fieldset id="forma">
+              <h4>Información</h4>
+              <!--primer campo-->
+                <ul id="campos">
+                  <li>
+                     <div class="col">
+                      <label for="nombrecompleto" class="form-label">Nombre Completo</label>
+                      <input type="text" class="form-control" id="nombrecompleto" value="" required>
+                      <div class="valid-feedback">
+                        Nombre Completo está correcto
+                      </div>
+                      <div class="invalid-feedback">
+                          
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <!--segundo campo-->
+                  <div class="col">
+                    <label for="edad" class="form-label">Edad</label>
+                    <input type="text" class="form-control" id="edad" value="" required>
+                    <div class="valid-feedback">
+                      Nombre Completo está correcto
+                    </div>
+                    <div class="invalid-feedback">
+                        
+                    </div>
+                  </div>
+                 
+                </li>
+                <li>
+                  <label for="genero" class="form-label">Género</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Sin Definir</option>
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                  </select>
+                </li>
+                <!--tercer campo-->
+                <li>
+                  <div class="col">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" value="" required>
+                    <div class="valid-feedback">
+                      Correo Electrónico
+                    </div>
+                    <div class="invalid-feedback">
+                        Requerido y de tipo correo electrónico
+                    </div>
+                  </div>
+                </li>
+                <!--cuarto campo-->
+                <li>
+                  <div class="col">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" id="telefono" value="" required>
+                    <div class="valid-feedback">
+                      Telefono
+                    </div>
+                    <div class="invalid-feedback">
+                      Campo requerido
+                    </div>
+                  </div>
+  
+                </li>
+                <!--quinto campo-->
+                <div class="col">
+                  <label for="rut" class="form-label">RUT</label>
+                  <input type="text" class="form-control" id="rut" value="" required>
+                  <div class="valid-feedback">
+                    Rut esta correcto
+                  </div>
+                  <div class="invalid-feedback">
+                      
+                  </div>
+                </div>
+                <li>
+                   
+                </li>
+                <!--sexto campo-->
+
+                <li>
+                  <label for="Region" class="form-label">Region</label>
+                  <select class="form-select" id="region" aria-label="Default select example">
+                    <option selected>Valparaiso</option>
+                    <option value="1">Metropolitana</option>
+                    <option value="2">Los lagos</option>
+                  </select>
+                </li>
+                <li> 
+                  <label for="comuna" class="form-label">Comuna</label>
+                  <select class="form-select" id="comuna" aria-label="Default select example">
+                    <option selected>comuna1</option>
+                    <option value="1">comuna2</option>
+                    <option value="2">comunax</option>
+                  </select>
+                </li>
+
+                <li>
+                  <div class="row justify-content-center">
+                  <div class="col-2">
+                     <button class="btn btn-primary" type="submit">Actualizar</button>
+                  </div>
+                  
+                  </div>
+                
+                </li>
+              </fieldset>
+            </form>
+
+        </div>
+        <script>var exports={};</script>
+        <script src="js/inicio.js" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+   
+    </body>
+</html>
